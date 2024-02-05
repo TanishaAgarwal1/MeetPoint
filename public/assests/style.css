@@ -1,0 +1,292 @@
+/* body{
+   
+    font-size: large;
+}
+.logo{
+    height: 43px;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.navbar-brand{
+    font-size: 49px;
+    padding-left: 5px;
+    font-weight: 400;
+}
+.nav-item a{
+    
+    color: gray ;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 0 16px ;
+
+     
+}
+.display-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+li.nav-item{
+    padding: 0 10px;
+}
+.signin-image{
+    height: 390px;
+    width: 600px;
+    border: 25px solid white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px grey;
+}
+textarea:focus,input:focus{
+    outline: none !important;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+.jumbotron{
+    background-color: white;
+} */
+
+
+
+.fixed-nav-detailsss {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px;
+background-color: #f0f0f0;
+padding-left: 10vw;
+padding-right: 10vw;
+}
+
+.logo {
+order: 1; /* Move the logo to the left */
+}
+
+.listss {
+order: 2; /* Center-align the navigation links */
+}
+
+.list ul {
+display: flex;
+list-style: none;
+padding: 0;
+}
+
+.list li {
+margin-right: 2.5vw;
+}
+
+.list a {
+text-decoration: none; /* Remove underline from anchor elements */
+font-size: 1.4vw;
+color: black;
+}
+
+.btns {
+order: 3; /* Move the button to the right */
+}
+
+.btn {
+background-color: #3498db;
+color: #fff;
+padding: 8px 12px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+font-size: 1.2vw;
+}
+
+.hamburger {
+order: 4; /* Optionally adjust the order of the hamburger icon */
+}
+.mainss {
+display: flex;
+padding-left: 10vw;
+padding-right: 10vw;
+}
+
+.child {
+flex: 1;
+height: 500px; /* Adjust the height as needed */
+
+margin: 10px; /* Adjust margin as needed */
+}
+
+.child.oness{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.centered-contentss {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+}
+.home-left-content1ss{
+padding-bottom: 0px;
+}
+.home-left-content2ss{
+padding-bottom: 2px;
+font-size: 2vw;
+}
+
+/* Add the following styles for child two */
+.child.two {
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.one a{
+text-decoration: none;
+}
+
+.child.two img {
+max-width: 100%;
+max-height: 100%;
+}
+
+
+@media only screen and (max-width: 768px) {
+.mainss{
+flex-direction: column;
+}
+
+.child.oness {
+order: 2;
+}
+
+.child.two {
+order: 1;
+}
+.home-left-content1ss h1{
+font-size: 4vw;
+}
+}
+
+/**********************index-page*********************************/
+.home-wrap{
+    background-color: black;
+    
+}
+.g-top{
+    height: 88vh;
+    position: relative;
+}
+.video-wrap{
+    height: 700px;
+}
+.video-wrap>*{
+    flex: 1 1 250px;
+    border: 1px solid white;
+}
+.g-top-left{
+    position: absolute;
+    right: 0;
+    height: 8vh;
+    top: 0;
+    border-bottom-left-radius: 10px;
+}
+
+
+.top-left-participant-wrap{
+    position: relative;
+}
+.cursor-pointer{
+    cursor: pointer;
+    padding: 5px;
+}
+.cursor-pointer:hover{
+    cursor: pointer;
+    padding: 5px;
+    background-color: rgb(226,225,225);
+    border-radius: 5px;
+
+}
+.top-left-participant-count{
+    position: absolute;
+    top: -2px;
+    right: -3px;
+    font-size: 15px;
+}
+.g-bottom{
+ 
+    padding:  0 20px;
+    box-shadow:  0 0 5px black;
+    z-index: 2;
+
+}
+.bottom-left{
+    position: relative;
+    padding:5px;
+}
+.action-icon-style{
+    height: 40px;
+    width: 40px;
+    border: 1px solid lightgray ;
+    border-radius: 50%;
+}
+
+.end-call-wrap{
+    -ms-transform:rotate(135deg) ;
+    transform: rotate(135deg);
+}
+.top-remote-video-show-wrap{
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+video{
+    border: 1px solid gray;
+    width: 300px;
+}
+.active{
+    background-color: #00808047;
+    border-radius: 5px;;
+
+}
+.top-box{
+    background-color: rgb(14 6 6);
+    position: fixed;
+    width: 25%;
+    height: 25%;
+    top: 20.5%;
+    left: 35.5%;
+    display: block;
+    box-shadow: 0 0 5px white ;
+    border-radius: 10px;
+    z-index: 999;
+    columns: white;
+    border:  2px solid white;
+
+}
+.bottom-left{
+    position: relative;
+    padding: 5px;
+}
+.g-details{
+    position: absolute;
+    width: 30vw;
+    background-color: white;
+    margin-top: -135px;
+    counter-reset: black;
+    border-radius: 5px;
+    padding: 5px;
+
+}
+.g-details-heading-show{
+    font-size: 14px;
+    padding-left: 10px;
+}
+.recording-show{
+    position: absolute;
+    margin-bottom: 132px;
+    display: none;
+} 
