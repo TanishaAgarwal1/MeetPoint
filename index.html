@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="public/assests/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <title>Google Meet</title>
+    <title>MeetPoint</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
     <script src="public/assests/js/app.js"></script>
@@ -17,8 +17,7 @@
             var user_id=window.prompt('enter userid');
             if(!meeting_id || !user_id)
             {
-                alert('wrong user or meeting id');
-                window.location.href='/action.html';
+                alert('wrong user or meeting id')
                 return;
             }
             $("#meetingContainer").show();
